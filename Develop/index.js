@@ -60,9 +60,20 @@ const questions = [
 const promptUser = () =>{
     return inquirer.prompt(questions)
     .then(answers =>{
+        fs.writeFile('./dist/README.md', generateMarkdown(answers), err =>{
+            if (err){
+                console.log(err)
+                return;
+            }
+            else{
+                console.log('Readme succesfully generated!');
+            }
+        })
         console.log(answers)
     });
 }
+
+
 
 // TODO: Create a function to initialize app
 function init() {}
