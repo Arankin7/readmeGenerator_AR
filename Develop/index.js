@@ -10,12 +10,30 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the Title of your project?'
+        message: 'What is the Title of your project?(Required)',
+        validate: titleInput => {
+            if(titleInput){
+                return true;
+            }
+            else {
+                console.log('Please enter a title for your project!')
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Please enter a description for your project.'
+        message: 'Please enter a description for your project.(Required)',
+        validate: descInput => {
+            if(descInput) {
+                return true;
+            }
+            else {
+                console.log('Please enter a description for your project.')
+                return false; 
+            }
+        }
     },
     {
         type: 'input',
@@ -40,13 +58,31 @@ const questions = [
     {
         type: 'checkbox',
         name: 'license',
-        message: 'Please chose the license for your project.',
-        choices: ['MIT', 'Apache', 'GNU General Public License', 'Mozilla Public License']
+        message: 'Please choose the license for your project.(Required)',
+        choices: ['MIT', 'Apache', 'GNU General Public License', 'Mozilla Public License', 'None'],
+        validate: licenseCheck => {
+            if(licenseCheck){
+                return true; 
+            }
+            else{
+                console.log('A license choice is required. Please choose a license.');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter your GitHub username.'
+        message: 'Please enter your GitHub username.(Required)',
+        validate: gitInput =>{
+            if(gitInput){
+                return true;
+            }
+            else{
+                console.log('Please enter your GitHub username.');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
