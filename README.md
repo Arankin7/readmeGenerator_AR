@@ -24,7 +24,7 @@
   ## Contribution 
   Anyone can feel free to contribute.  All that I ask is that you fork the repo and give the original creators credit where it is due.  
 
-  Starter code was provided by Rutgers bootcamp. [Starter Code](https://github.com/coding-boot-camp/potential-enigma)
+  [Starter Code](https://github.com/coding-boot-camp/potential-enigma) code was provided by Rutgers bootcamp. 
 
   The rest of the application was produced by Anthony Rankin
 
