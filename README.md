@@ -19,7 +19,7 @@
   Clone the repo onto your local machine, and make sure inquirer is installed. 
 
   ## Usage
-  To properly use the application first follow the installation instructions.  Then in the terminal enter 'node index.js'.  Follow the prompts and you will have a Professional README. 
+  To properly use the application first follow the installation instructions.  Then in the terminal enter 'node index.js'.  Follow the prompts and you will have a Professional README generated into the dist directory. 
 
   ## Contribution 
   Anyone can feel free to contribute.  All that I ask is that you fork the repo and give the original creators credit where it is due.  
