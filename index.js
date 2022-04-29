@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
 // const Choice = require('inquirer/lib/objects/choice');
 
 
@@ -96,7 +96,7 @@ const questions = [
 const promptUser = () =>{
     return inquirer.prompt(questions)
     .then(answers =>{
-        fs.writeFile('./dist/README.md', generateMarkdown(answers), err =>{
+        fs.writeFile('./Develop/dist/README.md', generateMarkdown(answers), err =>{
             if (err){
                 console.log(err)
                 return;
@@ -108,13 +108,5 @@ const promptUser = () =>{
         // console.log(answers)
     });
 }
-
-
-
-// TODO: Create a function to initialize app
-// function init() {}
-// init();
-
-// Function call to initialize app
 
 promptUser();
