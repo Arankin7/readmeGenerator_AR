@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const Choice = require('inquirer/lib/objects/choice');
+// const Choice = require('inquirer/lib/objects/choice');
 
 
 // TODO: Create an array of questions for user input
@@ -59,7 +59,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Please choose the license for your project.(Required)',
-        choices: ['MIT', 'Apache', 'GNU General Public License', 'Mozilla Public License', 'None'],
+        choices: ['MIT', 'Apache 2.0', 'IBM Public License Version 1.0', 'Mozilla Public License 2.0', 'None'],
         validate: licenseCheck => {
             if(licenseCheck){
                 return true; 
@@ -105,15 +105,16 @@ const promptUser = () =>{
                 console.log('Readme succesfully generated!');
             }
         })
-        console.log(answers)
+        // console.log(answers)
     });
 }
 
 
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
+// init();
 
 // Function call to initialize app
-init();
+
 promptUser();
