@@ -1,6 +1,6 @@
-# Title
+# Employee Tracker
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0) [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)   
+    
 
   ## Table of Contents
   * [Description](#description)
@@ -13,24 +13,24 @@
 
 
   ## Description 
-  Description
+  Employee Tracker is a command line Node app used to manage employees. 
 
   ## Installation
-  Instructions
+  First the repository should be cloned. The following packages must be installed: Node.js, inquirer, console.table, and mysql2.  To start the app, type node server.js into the command line.  Follow the prompts!  
 
   ## Usage
-  Usage info
+  
 
   ## Contribution 
-  Guidelines!
+  
 
   ## Testing
-  Test it out
+  
 
   ## License
-  MIT,Apache 2.0,IBM Public License Version 1.0,Mozilla Public License 2.0
+  
 
   ## Contact 
-  - Github: [Github](https://github.com/Git.user)
-  - Email: email.mail
+  - Github: [Github](https://github.com/arankin7)
+  - Email: arankin789
 
